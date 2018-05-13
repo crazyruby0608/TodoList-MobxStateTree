@@ -17,6 +17,9 @@ const store = TodoStore.create({
     {
       title: "Do exercise"
     },
+    {
+      title: "Do housework"
+    },
   ]
 });
 

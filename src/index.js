@@ -24,8 +24,3 @@ const store = TodoStore.create({
 });
 
 render(<TodoList todoStore={store} />, document.getElementById("root"));
-
-setTimeout(() => {
-  store.todos[0].toggle();
-  store.addTodo("Cool huh?");
-}, 2000);

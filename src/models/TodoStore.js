@@ -4,6 +4,7 @@ export const Todo = types
   .model("Todo", {
     id: types.optional(types.number, () => Math.random()),
     title: types.string,
+    description: types.string,
     finished: false
   })
   .actions(self => ({
@@ -22,8 +23,8 @@ export const TodoStore = types
     }
   }))
   .actions(self => ({
-    addTodo(title) {
-      self.todos.push({ title });
+    addTodo(title, description) {
+      self.todos.push({ title, description });
     },
     deleteTodo(id) {
       self.todos.pop({id});

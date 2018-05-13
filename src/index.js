@@ -9,17 +9,13 @@ import { TodoList } from "./components/TodoList";
 const store = TodoStore.create({
   todos: [
     {
-      title: "Get Coffee"
+      title: "Get Coffee",
+      description: "at The Coffee House"
     },
     {
-      title: "Write simpler code"
-    },
-    {
-      title: "Do exercise"
-    },
-    {
-      title: "Do housework"
-    },
+      title: "Write simpler code",
+      description: "Javascript"
+    }
   ]
 });
 
